@@ -23,7 +23,7 @@ class Empresa:
         """Devuelve los datos de la empresa como un texto legible."""
         # TODO: devuelve un texto con los datos del objeto, por ejemplo:
         #       "TechNova | TECNOLOGIA | 150 empleados | $500000000"
-        #       Usa un f-string con los atributos de self.
+        #       Usa un f-string con los atributos de self(ESTO ES SOLO UNA RPRUEB).
         return ""
 
 
