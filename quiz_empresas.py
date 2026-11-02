@@ -62,14 +62,14 @@ def calcular_total_ingresos(empresas):
 
 
 # 4) Quedarse solo con las empresas de un sector
-def filtrar_por_sector(empresas, sector):
+def filtrar_por_sector(empresas, sector_filtro):
     lista_filtrada = []
     for empresa in empresas:
-        if empresa.sector == sector:
+        if empresa.sector == sector_filtro:
             lista_filtrada.append(empresa)  
     """Devuelve una lista con las empresas cuyo sector coincide."""
     # TODO: devuelve una lista solo con las empresas de ese sector.
-    return []
+    return lista_filtrada
 
 
 # 5) Encontrar la empresa con mas empleados
@@ -97,7 +97,7 @@ def promedio_empleados(empresas):
     """Devuelve el promedio de empleados de todas las empresas."""
     # TODO: suma los empleados y divide entre la cantidad de empresas.
     #       Si la lista esta vacia, devuelve 0 (evita dividir entre cero).
-    return promedio
+    return round(promedio,2) #redondea 2 decimales
 
 
 # 7) Funcion principal: usa todo lo anterior y muestra los resultados
